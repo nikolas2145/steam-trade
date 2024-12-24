@@ -160,6 +160,7 @@ module Util
             require_relative 'meta/version.rb'
             gem_name = 'steam-trade'
             version = '0.0.5'
+            #TEST DIR
            t = ["#{File.dirname(File.expand_path($0))}/#{Meta::GEM_NAME}.rb",
                 "#{Gem.dir}/gems/#{Meta::GEM_NAME}-#{Meta::VERSION}/lib/#{Meta::GEM_NAME}.rb"]
                t.each {|i|
