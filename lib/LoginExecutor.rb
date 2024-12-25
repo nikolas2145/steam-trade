@@ -34,7 +34,7 @@ module LoginCommands
                         gid = firstreq['captcha_needed']
                         File.delete("./#{@username}_captcha.png") if File.exist?("./#{@username}_captcha.png")
                         @session.get("https://steamcommunity.com/login/rendercaptcha?gid=#{gid}").save "./#{@username}_captcha.png"
-                        puts @session.get("https://steamcommunity.com/login/rendercaptcha?gid=#{gid}")
+                        puts "https://steamcommunity.com/login/rendercaptcha?gid=#{gid}"
                         puts "you need to write a captcha to continue"
                         puts "there is an image named #{@username}_captcha in the script directory"
                         puts "open it and write the captcha here"
